@@ -11,56 +11,63 @@
 body{
     margin:0;
     font-family: Arial, sans-serif;
-    background:#f2f2f2;
+    background:#f3f5f9;
 }
 
 /* HEADER */
 .header{
-    background:#234ea0;
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
     color:white;
     text-align:center;
-    padding:40px 20px 60px 20px;
+    padding:50px 20px 80px;
 }
 
 .header h1{
     margin:0;
-    font-size:34px;
+    font-size:36px;
 }
 
 .header p{
-    margin-top:10px;
-    font-size:16px;
+    margin-top:12px;
+    font-size:17px;
 }
 
 /* BUTTON AREA */
 .main-buttons{
-    margin-top:-35px;
+    margin-top:-45px;
     text-align:center;
 }
 
-.main-buttons a{
-    text-decoration:none;
-}
-
-.main-buttons button{
+.btn{
     width:90%;
     max-width:420px;
-    margin:10px auto;
+    margin:12px auto;
     display:block;
-    padding:15px;
+    padding:16px;
     font-size:18px;
     border:none;
-    border-radius:12px;
-    background:#234ea0;
+    border-radius:14px;
     color:white;
     font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.app-btn{ background:#28a745; }
+.whatsapp-btn{ background:#25D366; }
+.book-btn{ background:#ff9800; }
+
+.small-text{
+    font-size:13px;
+    display:block;
+    opacity:0.9;
 }
 
 /* VERSION */
 .version{
     text-align:center;
     font-weight:bold;
-    margin:15px;
+    margin:18px;
+    font-size:16px;
 }
 
 /* CONTENT */
@@ -72,10 +79,10 @@ body{
 
 .card{
     background:white;
-    padding:18px;
+    padding:20px;
     margin:15px 0;
-    border-radius:12px;
-    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    border-radius:14px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
 }
 
 .card h2{
@@ -85,14 +92,15 @@ body{
 
 ul{
     padding-left:20px;
+    line-height:1.6;
 }
 
 /* FOOTER */
 .footer{
-    text-align:center;
-    padding:20px;
-    background:#234ea0;
+    background:#1e3c72;
     color:white;
+    text-align:center;
+    padding:18px;
     margin-top:30px;
 }
 
@@ -107,21 +115,27 @@ ul{
     <p>ગુજરાતની સ્પર્ધાત્મક પરીક્ષાઓ માટે વિશ્વસનીય શૈક્ષણિક પ્લેટફોર્મ</p>
 </div>
 
-<!-- MAIN BUTTONS -->
+<!-- BUTTONS -->
 <div class="main-buttons">
 
-    <!-- APK DOWNLOAD -->
     <a href="Focus%20On%20Career.apk">
-        <button>App Download</button>
+        <button class="btn app-btn">
+            📥 App Download
+            <span class="small-text">Safe & Secure Android App</span>
+        </button>
     </a>
 
-    <!-- WHATSAPP GROUP -->
     <a href="https://chat.whatsapp.com/Ec81UodEYPOLRkzqS33dx3?mode=gi_t">
-        <button>WhatsApp Group Join</button>
+        <button class="btn whatsapp-btn">
+            💬 WhatsApp Group Join
+            <span class="small-text">Daily Updates & Exam Material</span>
+        </button>
     </a>
 
-    <!-- BOOK -->
-    <button>Electrical Assistant Book (Order From App)</button>
+    <button class="btn book-btn">
+        📘 Electrical Assistant Book
+        <span class="small-text">Order From App Only</span>
+    </button>
 
 </div>
 
@@ -131,7 +145,6 @@ ul{
 
 <div class="container">
 
-    <!-- ABOUT -->
     <div class="card">
         <h2>અમારા વિશે</h2>
         <p>
@@ -140,7 +153,6 @@ ul{
         </p>
     </div>
 
-    <!-- EXAMS -->
     <div class="card">
         <h2>ગુજરાત ની પરીક્ષાઓ</h2>
         <ul>
@@ -157,7 +169,6 @@ ul{
         </ul>
     </div>
 
-    <!-- WHY FOCUS ON CAREER -->
     <div class="card">
         <h2>શા માટે Focus On Career ?</h2>
         <ul>
@@ -169,26 +180,23 @@ ul{
         </ul>
     </div>
 
-    <!-- ELECTRICAL ASSISTANT BOOK -->
     <div class="card">
         <h2>Electrical Assistant Special Book</h2>
-
         <p>
-        Electrical Assistant માટે ખાસ તૈયાર કરાયેલ પુસ્તક, 
-        જે GETCO અને UGVCL માં લાગેલા અનુભવી કર્મચારી દ્વારા 
-        સંપૂર્ણ syllabus આધારિત રીતે તૈયાર કરવામાં આવેલ છે.
+        Electrical Assistant માટે ખાસ તૈયાર કરાયેલ પુસ્તક,
+        GETCO અને UGVCL ના લાગેલા અનુભવી કર્મચારી દ્વારા
+        સંપૂર્ણ syllabus મુજબ તૈયાર કરવામાં આવેલ છે.
         </p>
 
         <ul>
             <li>GETCO Electrical Assistant syllabus મુજબ</li>
-            <li>UGVCL પરીક્ષા પેટર્ન મુજબ પ્રશ્નો</li>
+            <li>UGVCL Exam pattern આધારિત</li>
             <li>100% Exam Oriented MCQ</li>
-            <li>સરળ ગુજરાતી ભાષામાં સમજણ</li>
+            <li>સરળ ગુજરાતી સમજણ</li>
             <li>Book Order માત્ર App માંથી ઉપલબ્ધ</li>
         </ul>
     </div>
 
-    <!-- COPYRIGHT -->
     <div class="card">
         <h2>સામગ્રી જાહેરાત અને કૉપિરાઇટ સૂચના</h2>
         <p>
